@@ -1,8 +1,7 @@
 'use strict'
 
+let startTimer = 59; 
 let element = document.getElementById('timer');
-
-let startTimer = 40; 
 
 function changeTimer() {
 	if (startTimer === 0) {
@@ -13,4 +12,4 @@ function changeTimer() {
 	startTimer --;
 }
 
-setInterval(startTimer, 1000);
+setInterval(startTimer, 100);
